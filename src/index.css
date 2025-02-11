@@ -1,0 +1,356 @@
+html,
+body,
+.app {
+  font-family: "Space Grotesk", "Roboto", sans-serif;
+  font-style: normal;
+  color: white;
+  background-color: #310056;
+  margin: 0 auto;
+}
+
+button { /* all buttons */
+    border: none;
+}
+
+.home-page {
+  background-image: url("https://s3-alpha-sig.figma.com/img/294d/ee6f/a40c70a49ffc0a91f491d7c03437efe8?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Zfm5Crx1QfU4P8AuLzQgky3HWoxoiYKlxX6Mezk3LVaLHQP4tnTmdGFd7VzMqpolAAuKO8cDJgAsy6SeE3BIj6kfnZkia-emhOxZJaRJjFwHkcIIDoRPtmj6xIlt7O3diBELH4LypEySR9ZV1uR6lLtzCiQDjo7aGDBclj-ldSv6-bEhksQFb8dwVof2y~J0kOO240Q3d7kvT8bR-jP-cJEXG0GtTsRFVJWXs8AyJqdGNZAEUFBgL-VP9rgV9ZkulNkkQBWYHzF-uh2XbyVpWvA5VHgbkVZJXaY6bUEkpxdovomHlhaCnE7s4xlaXwl8~-~G34EZa1HcNc8WF69WdQ__");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+}
+
+.home-page-content {
+  top: 15%;
+  box-sizing: border-box;
+  position: relative;
+  width: 450px;
+  margin: 0 auto;
+  border: 1px solid #9747ff;
+  border-radius: 24px;
+  height: fit-content;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-rect-top {
+  position: relative;
+  box-sizing: border-box;
+
+  width: 218px;
+  height: 39px;
+
+  border: 1px solid #9747ff;
+  border-radius: 24px;
+}
+
+.home-page-content p {
+  font-size: 20px;
+}
+
+.step-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 36px;
+  width: 408px;
+  color: #310056;
+  background: #4bfe7f;
+  border-radius: 48px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.step-btn:disabled {
+  opacity: 0.5;
+}
+
+.editor {
+  top: 15%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+  gap: 24px;
+}
+
+.style-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  width: 500px;
+}
+
+.name-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px 0px;
+  gap: 10px;
+  width: 500px;
+  background: #13d8ff;
+  border-radius: 20px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.editor_step1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 500px;
+}
+
+.style-picker h2 {
+  margin-bottom: 0;
+}
+
+.editor_logo_grid {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 24px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.editor_line1 {
+  /* Frame 65 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  width: 500px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.editor_line2 {
+  /* Frame 64 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  width: 500px;
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.logo-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  width: 226px;
+  color: #ffffff;
+  background: #7122ff;
+  border-radius: 40px;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.logo-preview {
+  margin-top: 10px;
+}
+
+.logo-preview img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.switch-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  isolation: isolate;
+
+  width: 470px;
+
+  background: #7122ff;
+  border-radius: 16px;
+
+  /* Inside auto layout */
+  order: 1;
+  flex-grow: 0;
+}
+.switch-style h4 {
+  margin-bottom: 0;
+}
+
+.switch-words {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.switch-words button {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border: none;
+  background: none;
+  padding: 20px;
+}
+
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  gap: 40px;
+}
+
+.loading-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 550px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.loading-list-item .circle {
+  width: 40px;
+  height: 40px;
+  background-color: #9747ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.loading-list-item .circle.pulsing {
+  animation: pulse 2s infinite;
+}
+
+.loading-list-item .circle.completed {
+  background-color: #ff3e82;
+}
+
+.loading-list-item .text {
+  flex-grow: 1;
+  font-weight: lighter;
+  color: gray;
+}
+
+.home-icon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.home-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.home-icon.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.try-again-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+}
+
+.try-again-btn {
+width: 161px;
+height: 56px;
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 56px;
+letter-spacing: -0.02em;
+text-align: center;
+color: #FFFCE1;
+opacity: 0.6;
+}
+
+.try-again-btn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.stickers-container { /* Sticker style on Sticker.css file */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

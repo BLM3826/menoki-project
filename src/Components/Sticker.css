@@ -1,0 +1,132 @@
+.sticker {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+}
+
+.sticker img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 10px;
+}
+
+.sticker-quote {
+  position: relative;
+  margin: auto;
+  width: 100%;
+}
+
+.sticker-text {
+  margin: 5px 0;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+/* Vibe styles */
+.sticker-quote.Fancy .sticker-text {
+  font-family: "Cursive", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.sticker-quote.BOLD .sticker-text {
+  font-family: "Arial Black", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Animation styles */
+.sticker.Smooth1, .sticker.Active1 {
+  img {
+    scale: 1.5;
+  }
+  .sticker-quote {
+    transform: translateY(10%);
+  }
+  .sticker-text {
+    font-size: x-large;
+  }
+}
+
+.sticker.Smooth1,
+.sticker.Active1 {
+  grid-column: span 2;
+}
+
+.sticker.Smooth2,
+.sticker.Smooth3,
+.sticker.Active2,
+.sticker.Active3 {
+  grid-column: span 1;
+}
+
+.sticker.Smooth2 img {
+  animation: smoothZoomAnimation 2s infinite;
+}
+
+.sticker.Smooth3 .sticker-quote {
+  animation: smoothAnimation 2s infinite;
+}
+
+.sticker.Active2 img {
+  animation: activeZoomAnimation 1s infinite;
+}
+
+.sticker.Active3 .sticker-quote {
+  animation: activeAnimation 1s infinite;
+}
+
+@keyframes smoothAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes activeAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes activeZoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes smoothZoomAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
